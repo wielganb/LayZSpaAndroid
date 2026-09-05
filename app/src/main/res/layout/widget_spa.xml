@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/widgetRoot" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="16dp" android:gravity="center" android:background="@drawable/widget_bg">
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="LAY-Z-SPA" android:textSize="14sp" android:textStyle="bold" android:textColor="#19303E" android:gravity="center"/>
-    <TextView android:id="@+id/widgetTemp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="--°" android:textSize="42sp" android:textStyle="bold" android:textColor="#1C97DD" android:gravity="center"/>
-    <TextView android:id="@+id/widgetTarget" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TARGET 30°C" android:textSize="12sp" android:textStyle="bold" android:textColor="#5B6F7C" android:gravity="center"/>
-    <TextView android:id="@+id/widgetStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="● OFFLINE" android:textSize="11sp" android:textColor="#5B6F7C" android:gravity="center" android:paddingTop="6dp"/>
-</LinearLayout>
