@@ -1,0 +1,13 @@
+workflows:
+  android-debug:
+    name: Lay-Z-Spa Android APK
+    max_build_duration: 30
+    environment:
+      java: 17
+    scripts:
+      - name: Verify Gradle environment
+        script: gradle --version
+      - name: Build APK
+        script: gradle --no-daemon --stacktrace assembleDebug
+    artifacts:
+      - app/build/outputs/apk/debug/app-debug.apk
