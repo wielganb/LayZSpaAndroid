@@ -1,0 +1,18 @@
+workflows:
+  android-showroom:
+    name: Smart Spa Showroom
+    max_build_duration: 30
+    environment:
+      groups:
+        - google_play
+      vars:
+        PACKAGE_NAME: "pl.smartspa.showroom"
+      android_signing:
+        - keystore_reference
+    scripts:
+      - name: Build debug APK
+        script: |
+          chmod +x ./gradlew || true
+          ./gradlew assembleDebug
+    artifacts:
+      - app/build/outputs/apk/debug/app-debug.apk
